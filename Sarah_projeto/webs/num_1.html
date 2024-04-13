@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mockup</title>
+    <link rel="stylesheet" href="/webs/css/num1.css">
+    <link rel="stylesheet" href="/webs/css/style.css">
+</head>
+<body>
+    <header class="header2"> 
+       <div class="texto">
+         <h1 class="h1">Nome da comunidade</h1>
+      <nav class="links">
+        <a href="index.html">voltar</a>
+    </header> <!-- fim da classe header --> 
+    <section>
+        <div class="conversas">
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/batman icon.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Nome do Usuário</p>
+                    <p class="mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/batman icon.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Nome do Usuário</p>
+                    <audio src="/audio/audio.mp3" controls></audio> <!-- Adiciona a propriedade controls -->
+                </div>
+                
+            </div>
+
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/batman icon.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Nome do Usuário</p>
+                    <p>queria muito esse cabelo</p>
+                    <img src="/imagens/Corte de cabelo masculino.jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="caixa-de-conversa">
+                <!-- Conteúdo da caixa de conversa -->
+            </div>
+            
+            <div id="mensagens"></div>            
+
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/batman icon.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Nome do Usuário</p>
+                    <form id="meuFormulario" method="post" enctype="multipart/form-data" action="/enviar-mensagem">
+                        <div class="caixa-mensagem2">
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+                            <input type="file" id="arquivo" name="arquivo" accept="audio/*,video/*,image/*,.txt">                            
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Repita a estrutura para mais mensagens -->
+        </div>
+    </section> <!-- fim da section -->
+    <footer class="footer">
+        <div>
+        <p>© 2024 / Carlos Eugênio / Todos os direitos reservados</p>
+        </div>
+    </footer>  <!-- fim da classe footer --> 
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
