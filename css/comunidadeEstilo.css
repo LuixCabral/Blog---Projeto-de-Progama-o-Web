@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* estilos do body */
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+
+    height: fit-content;
+    width: 100vw;
+}
+
+/* estilos do header */
+.header {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+
+    top: 0; /* Fixar o cabeçalho no topo da página */
+    width: 100%; /* Garantir que o cabeçalho ocupe a largura total */
+    position: sticky; /* Tornar o cabeçalho grudento */
+    height: 7vh; 
+    border: 2px solid black;
+    
+}
+
+/* estilos da logo */
+.h1 {
+    text-align: left;
+    justify-self: center;
+    margin-left: 20px;
+}
+
+/* estilos do menu no header */
+#menu {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    width: fit-content;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    width: 300px;
+    list-style: none;
+    
+}
+
+.links a {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+
+    padding: 10px;
+    width: fit-content;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: blue;
+    width: 95vw;
+    max-width: 900px;
+    height: fit-content;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+
+#introComunidadeDiv {
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: red;
+    height: 300px;
+}
+
+#imagemComunidadeDiv {
+    background-color: blueviolet;
+    height: 130px;
+}
+#capaImagem {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 130px;
+    width: 95vw;
+    max-width: 900px;
+    background-color: aquamarine;
+
+}
+#tituloComunidadeDiv {
+    height: 170px;
+    width: 95vw;
+    max-width: 900px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;  
+}
+
+#conversaDiv {
+    width: 95vw;
+    max-width: 900px;
+    height: fit-content;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: chartreuse;
+
+}
+
+.conversaBox {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    height: fit-content;
+    background-color: burlywood;
+}
+
+.infoUsuarioDiv {
+    background-color: chartreuse;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    width: fit-content;
+    height: fit-content;
+    
+
+}
+.avatarUsuarioDiv {
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: aquamarine;
+
+    width: 50px;
+    height: 50px;
+}
+.avatarUsuario {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.nomeUsuario {
+    margin-right: 10px;
+}
+
+#novoPostDiv {
+    width: 95vw;
+    max-width: 900px;
+    height: fit-content;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(255, 132, 0);
+}
+
+.inputDiv {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    height: fit-content;
+    background-color: burlywood;
+}
+
+.conteudoDiv {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    
+}
+#formularioNovoPost {
+    background-color: blue;
+    width: 95%;
+    height: fit-content;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.caixa-mensagem2 {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 90%;
+}
+#tituloPost {
+    width: 90%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    font-size: larger;
+    margin-top: 10px;
+}
+#tituloPost:hover {
+    cursor: pointer;
+}
+#mensagem {
+    width: 90%;
+    height: 90px;
+    border: none;
+    padding: 10px;
+    font-size: large;
+    margin-top: 10px;
+}
+
+footer {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-flow: column nowrap;
+    margin-top: 50px;
+}
