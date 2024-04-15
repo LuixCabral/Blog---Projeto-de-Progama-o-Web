@@ -1,10 +1,28 @@
+/* Reset de margem, preenchimento e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Define as configurações de estilo para o corpo do documento */
 body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 100px;
     background-color: #15202b; /* Define o fundo do corpo como azul escuro para o modo escuro */
-    margin: 0; /* Remove a margem padrão */
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
     color: #ffffff; /* Define a cor do texto principal */
 }
+
+
+.h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 
 /* Define as configurações de estilo para o cabeçalho */
 .header2 {
