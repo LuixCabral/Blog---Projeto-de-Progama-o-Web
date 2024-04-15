@@ -1,0 +1,95 @@
+/* Reset de margem, preenchimento e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+/* Estilo para o cabeçalho */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0); /* Torna o cabeçalho transparente */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+/* Estilo para o título h1 dentro do cabeçalho */
+.h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para os links dentro do cabeçalho */
+.links {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; /* Alinhamento à direita */
+}
+
+.links a {
+    text-decoration: none;
+    color: black; /* Define a cor dos links */
+    padding: 1px 9px; /* Ajusta o preenchimento dos links */
+    background-color: rgba(0, 0, 0, 0); /* Torna os links transparentes */
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+.links a:hover {
+    background-color: #005ea6; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Adicione a classe 'show' para mostrar as comunidades */
+.comunidades {
+    display: none;
+    position: absolute; /* Mudando para posição absoluta */
+    left: 0; /* Alinhando com o lado esquerdo */
+    top: 80px; /* Ajustando a posição em relação ao cabeçalho */
+    background-color: #cee3f8; /* Azul claro */
+    padding: 20px;
+    border: 2px solid black;
+    height: 50%;
+}
+
+.comunidades.show {
+    display: block; /* Alterado para 'block' para mostrar verticalmente */
+}
+
+#showCommunitiesBtn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0079d3; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Removendo a borda do botão */
+    border-radius: 25px; /* Deixando o botão redondo */
+    cursor: pointer; /* Mudando o cursor ao passar por cima */
+}
+
+
+
+/* Estilo para o rodapé */
+.footer {
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0); /* Torna o cabeçalho transparente */
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}

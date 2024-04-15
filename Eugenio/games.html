@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a configuração de visualização para dispositivos móveis -->
+    <title>Games e peripécias</title> <!-- Título da página -->
+    <link rel="stylesheet" href="/css/games.css"> <!-- Importa o arquivo CSS para estilizar elementos específicos relacionados a jogos -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Importa o arquivo CSS para estilizar elementos gerais da página -->
+</head>
+<body>
+    <header class="header2"> 
+       <div class="texto">
+         <h1 class="h1">jogos e peripécias</h1> <!-- Título principal da página -->
+      <nav class="links2">
+        <a href="index.html">voltar</a> <!-- Link de navegação para a página inicial -->
+    </header> <!-- Fim da tag header --> 
+    <section>
+        <div class="conversas"> <!-- Contêiner para as conversas -->
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/joker icon.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                 <p class="usuario">luis Victor</p> <!-- Nome do usuário -->
+                    <p class="mensagem">Quase 300horas da minha vida jogas fora...RECOMENDO👍</p> <!-- Mensagem do usuário -->
+                    <img src="/imagens/LUIS.jpeg">
+                </div>
+            </div>
+
+            <!-- Conversa 2 -->
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/robin.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">mulekinho prodigio 😎</p> <!-- Nome do usuário -->
+                    <p>amo a trilha sonora desse jogo 🦇</p> <!-- Mensagem do usuário -->
+                    <img src="/imagens/batman.jpg" alt=""> <!-- Imagem do jogo mencionado -->
+                    <audio src="/audio/gameaudio.mp3" controls></audio> <!-- Reproduz o áudio do jogo mencionado -->
+                </div>
+                
+            </div>
+
+            <!-- Conversa 3 -->
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/𝘼𝙧𝙩𝙝𝙪𝙧 𝙈𝙤𝙧𝙜𝙖𝙣 𝙞𝙘𝙤𝙣.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Samuel Sampaio</p> <!-- Nome do usuário -->
+                    <p>8 MARAVILHA DO MUNDO</p> <!-- Mensagem do usuário -->
+                    <video src="/video/REDDEAD2.mp4" controls></video> <!-- Reproduz o vídeo do jogo mencionado -->
+                </div>
+                
+            </div>
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/astro.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                 <p class="usuario">Astronauta</p> <!-- Nome do usuário -->
+                    <p class="mensagem">Apenas New Vegas</p> <!-- Mensagem do usuário -->
+                    <img src="/imagens/newvegas.jpg">
+                </div>
+            </div>
+
+
+            <!-- Conversa 4 -->
+            <div id="mensagens"></div>  <!--DIV PARA IMPLENTAÇÃO DO JS--> 
+                      
+            <!-- Conversa 5 -->
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/imagens/batman icon.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario" id="user">Carlos Eugênio</p> <!-- Nome do usuário -->
+                    <form id="meuFormulario" method="post" enctype="multipart/form-data" action="/enviar-mensagem"> <!-- Formulário para enviar mensagens -->
+                        <div class="caixa-mensagem2">
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea> <!-- Área de texto para digitar a mensagem -->
+                            <input type="file" id="arquivo" name="arquivo" accept="audio/*,video/*,image/*,.txt"> <!-- Botão para selecionar arquivos -->
+                        </div>
+                        <button type="submit">Enviar</button> <!-- Botão para enviar a mensagem -->
+                    </form>
+                </div>
+            </div>
+            <!-- Repita a estrutura para mais mensagens -->
+        </div>
+    </section> <!-- Fim da seção -->
+    <footer class="footer2">
+        <div>
+        <p> <strong>© 2024 / Carlos Eugênio / Todos os direitos reservados</strong></p> <!-- Direitos autorais e informações do autor -->
+        </div>
+    </footer>  <!-- Fim da tag footer --> 
+
+
+     <!-- Caixa de texto flutuante -->
+     <div class="caixa-flutuante" id="caixaFlutuante">
+        <h2>Bem-vindo à comunidade de Jogos e peripécias</h2>
+        <p>Aqui você pode encontrar conversas sobre jogos e interagir com outros usuários.</p>
+        <button id="button" onclick="fecharCaixa()">Fechar</button>
+    </div>
+
+    <script src="/js/games.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>
