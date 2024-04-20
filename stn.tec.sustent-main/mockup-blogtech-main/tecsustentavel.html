@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a configuração de visualização para dispositivos móveis -->
+    <title>Tecnologia Sustentavel</title> <!-- Título da página -->
+    <link rel="stylesheet" href="/mockup-blogtech-main/css/sustent.css"> <!-- Importa o arquivo CSS para estilizar elementos específicos relacionados a jogos -->
+</head>
+<body>
+    <header class="header2"> 
+       <div class="texto">
+         <h1 class="h1">Tecnologia Sustentavel</h1> <!-- Título principal da página -->
+      <nav class="links2">
+        <a href="">voltar</a> <!-- Link de navegação para a página inicial -->
+    </header> <!-- Fim da tag header --> 
+    <section>
+        <div class="conversas"> <!-- Contêiner para as conversas -->
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/mockup-blogtech-main/imagens/osoro.png.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                 <p class="usuario">Pedão Osoro </p> <!-- Nome do usuário -->
+                    <p class="mensagem">Achei da hora esse post</p> <!-- Mensagem do usuário -->
+                    <img src="/mockup-blogtech-main/imagens/verde.png.jpg">
+                </div>
+            </div>
+
+            <!-- Conversa 2 -->
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/mockup-blogtech-main/imagens/boi.png.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Marcus Murilo</p> <!-- Nome do usuário -->
+                    <p>Se liga nesse audio </p> <!-- Mensagem do usuário -->
+                    <img src="/imagens/batman.jpg" alt=""> <!-- Mostra a Imagem -->
+                    <audio src="/mockup-blogtech-main/audio/COMO A TECNOLOGIA ESTÁ AJUDANDO O MEIO AMBIENTE _.mp3" controls></audio> <!-- Reproduz o áudio -->
+                </div>
+                
+            </div>
+
+            <!-- Conversa 3 -->
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/mockup-blogtech-main/imagens/lula.png.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Lionel Ronaldo Junior</p> <!-- Nome do usuário -->
+                    <p>Ideia bacana</p> <!-- Mensagem do usuário -->
+                    <video src="/mockup-blogtech-main/video/sustent.mp4.mp4" controls></video> <!-- Reproduz o vídeo  -->
+                </div>
+                
+            </div>
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/mockup-blogtech-main/imagens/matheus.png.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                 <p class="usuario">Matheus Bet</p> <!-- Nome do usuário -->
+                    <p class="mensagem">Muito sustentável</p> <!-- Mensagem do usuário -->
+                    <img src="/mockup-blogtech-main/imagens/catavento.png.jpg"
+            </div>
+
+
+            <!-- Conversa 4 -->
+            <div id="mensagens"></div>  <!--DIV PARA IMPLENTAÇÃO DO JS--> 
+                      
+            <!-- Conversa 5 -->
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/mockup-blogtech-main/imagens/iogr.png.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario" id="user">Foguinho Osorio Ailton Mendes Bet &#129297;</p> <!-- Nome do usuário -->
+                    <form id="meuFormulario" method="post" enctype="multipart/form-data" action="/enviar-mensagem"> <!-- Formulário para enviar mensagens -->
+                        <div class="caixa-mensagem2">
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea> <!-- Área de texto para digitar a mensagem -->
+                            <input type="file" id="arquivo" name="arquivo" accept="audio/*,video/*,image/*,.txt"> <!-- Botão para selecionar arquivos -->
+                        </div>
+                        <button type="submit">Enviar</button> <!-- Botão para enviar a mensagem -->
+                    </form>
+                </div>
+            </div>
+            <!-- Repita a estrutura para mais mensagens -->
+        </div>
+    </section> <!-- Fim da seção -->
+    <footer class="footer2">
+        <div>
+        <p> <strong>© 2024 / Antonio Santana / Todos os direitos reservados</strong></p> <!-- Direitos autorais e informações do autor -->
+        </div>
+    </footer>  <!-- Fim da tag footer --> 
+
+
+     <!-- Caixa de texto flutuante -->
+     <div class="caixa-flutuante" id="caixaFlutuante">
+        <h2>Essa é a comunidade de Tecnologia Sustentavel</h2>
+        <p>Aqui temos tudo sobre tecnologia sustentavel</p>
+        <button id="button" onclick="fecharCaixa()">Fechar</button>
+    </div>
+
+    <script src="/mockup-blogtech-main/js/sustent.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>
