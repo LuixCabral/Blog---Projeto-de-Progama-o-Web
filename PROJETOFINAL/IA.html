@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - IA</title>
+    <link rel="stylesheet" href="css/Ia.css">
+</head>
+<body>
+    <header class="header">
+        <div class="texto">
+            <h1>AI today</h1>
+        </div>
+        <a href="index.html">
+            <img src="/img/icons8-home.svg" alt="home">
+        </a>
+    </header>
+    <section>
+        <div class="conversas">
+            <div class="caixa-flutuante" id="caixaFlutuante">
+                <h2 class="texto">AI today</h2>
+                <p class="texto">Bem Vindo á comunidade AI Today ,
+                    uma comunidade criada para todos aqueles que nao somente
+                    querem conhecer novos horizontes que foram criados
+                    pela IA , mas também á todos aqueles
+                    que ja possuem familiaridade com ela e querem
+                    compartilhar suas experiências , projetos , dicas
+                    e muito mais.</p>
+                <button onclick="fecharCaixa()">Fechar</button>
+            </div>
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/eugenio e as crianças.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Eugenio e as Crianças</p>
+                    <p class="texto">Iai dev , ou voçê ai que caiu de paraquedas nessa comunidade,
+                        deixa eu te falar, Hoje em dia a IA se tornou uma realidade em todas as áreas de conhecimento
+                        e aquele profissional que consegue dominar e se adaptar a essa nova realidade o quanto antes,
+                        já está um passo á frente de todos os outros profissionais. Sabendo disso , eu preparei um curso
+                        online totalmente gratuito até o dia 23/04 onde eu vou te mostrar , abrir os seus olhos , e praparar você
+                        á essa nova realidade para que se torne um profissional forte e requisitado no mercado , dominando as mais novas
+                        tecnologias do mercado.
+                    </p>
+                </div>
+            </div>
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/flavin do peneu.webp" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Flavin do Pneu</p>
+                    <audio src="/audio/audio.mp3" controls></audio> <!-- Adiciona a propriedade controls -->
+                </div>
+            </div>
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/xaolin matador de porco.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Xaolin Matador de Porco</p>
+                    <p class="texto">Se liga nesse meu projeto que estou desenvolvendo!!! Desenvolvendo minha Primeira IA
+                    </p>
+                    <img src="/img/codesnapi.png" alt="">
+                </div>
+            </div>
+            <div id="mensagens">
+                <div class="caixa-de-conversa">
+                    <div class="avatar">
+                        <img src="/img/th.jpeg" alt="Avatar">
+                    </div>
+                    <div class="conteudo">
+                        <p class="usuario" id="user">Mustang Preto</p>
+                        <p class="texto">SE LIGA NESSE VIDEO FEITO POR IA!!!!</p>
+                        <video src="/video/video-projeto.mp4" controls></video>
+                    </div>
+                </div>
+            </div>
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/lucigol.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Botone</p>
+                    <form id="meuFormulario" method="post" enctype="multipart/form-data" action="/enviar-mensagem">
+                        <div class="caixa-mensagem2">
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+                            <input type="file" id="arquivo" name="arquivo" accept="audio/*,video/*,image/*,.txt">
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> <!-- fim da section -->
+    <footer class="footer">
+        <div>
+            <p class="texto">
+                @2024/Luis Victor Cabral/Todos os direitos Reservados
+            </p>
+        </div>
+    </footer>
+    <script src="js/IA.js"></script>
+</body>
+</html>

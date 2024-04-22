@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realidade Virtual</title>
+    <link rel="stylesheet" href="/css/RV.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="texto">
+            <h1 class="h1">Realidade Virtual (RV) e Realidade Aumentada (RA):</h1>
+            <nav class="links">
+                <a href="index.html">Voltar</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="conversas">
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/batman icon.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Charles</p>
+                    <p class="mensagem">Na moral, toda vez que entro nessa comunidade, eu sinto vontade de comprar algum óculos de VR,mas é muito caro :(</p>
+                    <p><span class="tempo">Há 3m   </span> <span class="likes"> ❤10</span></p> <!-- Span usado para dividir as frases-->
+                    <div class="avatar">
+                        <img src="/img/joker.jpg" alt="Avatar"> <p>Foguinho</p>
+                    </div>
+                    <p><span class="tempo">Há 1m: </span> Tô na mesma situação, mano <span class="likes"> ❤1</span></p>
+                </div>
+            </div>
+
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/spy family.jpeg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Ana Vitória</p>
+                    <p>Me mandaram isso no zap,alguém aí sabe se é bom?</p>
+                    <img src="/img/oculos realidade aumentada.jpg"></img>
+                    <p><span class="tempo">Há 28m   </span> <span class="likes"> ❤530</span></p>
+                    <div class="avatar">
+                        <img src="/img/picapau.jpg" alt="Avatar"> <p>Igor Ailton</p>
+                    </div>
+                    <p><span class="tempo">Há 12m: </span> Acho que esse produto não vale a pena <span class="likes"> ❤56</span></p>
+                </div>
+            </div>
+
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/ricktwd.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Pablo Marçal</p>
+                    <p>Gameplay hj foi com VR!</p>
+                    <img src="/img/gameplayVR.jpg"></img>
+                    <p><span class="tempo">Há 35m   </span> <span class="likes"> ❤720</span></p>
+                    <div class="avatar">
+                        <img src="/img/ICONETII.png" alt="Avatar"> <p>Monark</p>
+                    </div>
+                    <p><span class="tempo">Há 29m: </span> Dahora,mano! <span class="likes"> ❤89</span></p>
+                </div>
+            </div>
+
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/minecraft-creeper-face.avif" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Paulo Vitor</p>
+                    <p>Galera to vendendo meu VR de ps4, interessados manda mensagem</p>
+                    <img src="/img/vendaVR.webp"></img>
+                    <p><span class="tempo">Há 45m   </span> <span class="likes"> ❤1254</span></p>
+                    <div class="avatar">
+                        <img src="/img/gatosiames.webp" alt="Avatar"> <p>MatheusBet</p>
+                    </div>
+                    <p><span class="tempo">Há 32: </span> Qual o valor? <span class="likes"> ❤67</span></p>
+                </div>
+            </div>
+
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/chicoin.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario">Murilo Santana Osório</p>
+                    <p>Olhem o que chegou hoje :3!</p>
+                    <img src="/img/vision pro.jpeg" alt="">
+                    <p><span class="tempo">Há 1h   </span> <span class="likes"> ❤2570</span></p>
+                    <div class="conversa">
+                        <div class="comentario">
+                            <div class="avatar">
+                                <img src="/img/Corte de cabelo masculino.jpeg" alt="Avatar"> <p>Santana</p>
+                            </div>
+                            <p><span class="tempo">Há 28m: </span> Que massa mano, comprou no Brasil ou importou? <span class="likes"> ❤530</span></p>
+                        </div>
+                        <div class="avatar">
+                            <img src="/img/casimiro.webp" alt="Avatar"> <p>Casimiro</p>
+                        </div>
+                        <div class="resposta">
+                            <p><span class="tempo">Há 10m: </span> Que legal , me empresta depois hahaha <span class="likes"> ❤158</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="mensagens"></div>
+
+            <div class="caixa-de-conversa">
+                <div class="avatar">
+                    <img src="/img/relampago-mcqueen_capa_widelg.jpg" alt="Avatar">
+                </div>
+                <div class="conteudo">
+                    <p class="usuario" id="user"> Cleiton</p>
+                    <form id="meuFormulario" method="post" enctype="multipart/form-data" action="/enviar-mensagem">
+                        <div class="caixa-mensagem2">
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+                            <input type="file" id="arquivo" name="arquivo" accept="audio/,video/,image/*,.txt">
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section> <!-- fim da section -->
+    <footer class="footer">
+        <div>
+            <p>© 2024 / Carlos Murilo / Todos os direitos reservados</p>
+        </div>
+    </footer>  <!-- fim da classe footer --> 
+
+    <script src="/js/RV.js"></script>
+</body>
+</html>

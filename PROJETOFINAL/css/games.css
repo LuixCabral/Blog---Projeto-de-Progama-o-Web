@@ -1,0 +1,198 @@
+/* Reset de margem, preenchimento e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define as configurações de estilo para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 100px;
+    background-color: #15202b; /* Define o fundo do corpo como azul escuro para o modo escuro */
+    color: #ffffff; /* Define a cor do texto principal */
+}
+
+
+.h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* Define as configurações de estilo para o cabeçalho */
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0); /* Torna o cabeçalho transparente */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+/* Define as configurações de estilo para os links dentro do cabeçalho */
+.links2 {
+    display: flex;
+    justify-content: flex-end; /* Alinha os links à direita */
+}
+
+.links2 a {
+    text-decoration: none;
+    color: white; /* Define a cor dos links */
+    padding: 1px 9px; /* Ajusta o preenchimento dos links */
+    background-color: rgba(0, 0, 0, 0); /* Torna os links transparentes */
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+.links2 a:hover {
+    background-color: #0d8bff; /* Define a cor de fundo mais escura ao passar o mouse */
+}
+
+/* Define as configurações de estilo para a seção de conversas */
+.conversas {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Define as configurações de estilo para a caixa de conversa */
+.caixa-de-conversa {
+    display: flex;
+    gap: 10px;
+    background-color: #1c2938; /* Define a cor de fundo da caixa de conversa */
+    padding: 15px; /* Adiciona espaço interno */
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+/* Define as configurações de estilo para o avatar */
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* Garante que a imagem do avatar se ajuste corretamente */
+}
+
+/* Define as configurações de estilo para o conteúdo */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Define as configurações de estilo para o nome de usuário */
+.usuario {
+    font-weight: bold;
+    color: #ffffff; /* Define a cor do texto principal */
+}
+
+/* Define as configurações de estilo para a mensagem */
+.mensagem {
+    margin-top: 5px;
+    color: #8899a6; /* Define a cor da mensagem */
+}
+
+/* Define as configurações de estilo para imagens dentro do conteúdo */
+.conteudo img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto;
+    display: block;
+}
+
+/* Define as configurações de estilo para áudios */
+.conteudo audio {
+    width: 300%; /* Define a largura do elemento de áudio */
+    margin-top: 10px; /* Adiciona margem superior */
+    z-index: 1; /* Define uma ordem de empilhamento menor para o áudio */
+}
+
+.conteudo audio + img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima */
+}
+
+/* Define as configurações de estilo para vídeos */
+.conteudo video {
+    width: 30%; /* Define a largura do vídeo */
+    height: 100%; /* Altura automática */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    margin-top: 5px; /* Adiciona margem superior */
+}
+
+/* Define as configurações de estilo para a caixa de mensagem */
+.caixa-mensagem2 {
+    width: 60%;
+    background-color: #192734; /* Define a cor de fundo da caixa de mensagem */
+    border: 1px solid #38444d; /* Define a cor da borda */
+    border-radius: 10px;
+    padding: 15px; /* Adiciona espaço interno */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+/* Define as configurações de estilo para o textarea */
+textarea {
+    width: calc(100% - 30px); /* Calcula a largura do textarea */
+    border: none;
+    background-color: #1c2938; /* Define a cor de fundo do textarea */
+    resize: none;
+    outline: none;
+    margin: 5px 0; /* Adiciona margem superior e inferior */
+    padding: 10px; /* Adiciona espaço interno */
+    border-radius: 5px;
+    color: #ffffff; /* Define a cor do texto principal */
+}
+
+/* Define as configurações de estilo para o input de arquivo */
+input[type="file"] {
+    margin-top: 5px;
+}
+
+/* Define as configurações de estilo para o botão */
+button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+/* Estilos para a caixa de texto flutuante */
+.caixa-flutuante {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(21, 32, 43, 0.95);/* Define o fundo do corpo como azul escuro para o modo escuro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none; /* Oculta a caixa de texto por padrão */
+}
+
+
+.caixa-flutuante p, h2{
+    text-align: center;
+    
+
+}
+
+
+/* Define as configurações de estilo para o rodapé */
+.footer2 {
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+    margin-top: auto; /* Alinha o rodapé ao final da página */
+    text-align: center; /* Centraliza o conteúdo */
+}

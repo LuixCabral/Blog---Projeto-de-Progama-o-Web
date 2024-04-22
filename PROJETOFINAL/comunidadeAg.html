@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMERAS FOTOGRAFICAS</title>
+    <link rel="stylesheet" href="/css/comunidadeEstilo.css">
+</head>
+<body>
+
+    <!-- header -->
+
+    <header class="header"> 
+        <div class="texto">
+            <h1 class="h1">BLOGTECH</h1>
+        </div>
+
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">voltar</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- introducao da comunidade -->
+
+        <section id="introComunidadeDiv">
+            <div id="imagemComunidadeDiv">
+                <img id="capaImagem" src="/img/imagemCapa.jpeg" alt="Imagem capa da comunidade">
+            </div>
+
+            <div id="tituloComunidadeDiv">
+                <h1>CAMERAS FOTOGRAFICAS</h1>
+            </div>
+        </section>
+
+        <!-- conversas -->
+
+        <section id="conversaDiv">
+
+            <div class="conversaBox">
+
+                <!-- informacoes do usuario -->
+
+                <div class="infoUsuarioDiv">
+                    <div class="avatarUsuarioDiv">
+                        <img class="avatarUsuario" src="/img/imagem2.png" alt="Avatar"> <!-- avatar do usuario -->
+                    </div>
+
+                    <div class="nomeTempoDiv">
+                        <p class="nomeUsuario"><strong>Usuário</strong></p> <!-- nome do usuario -->
+                        <p class="tempoPost">Há 3 min</p> <!-- tempo da postagem -->
+                    </div>
+                </div>
+
+                <!-- conteudo publicado -->
+
+                <div class="conteudo">
+                    <h1>Qual o aspect ratio dessa imagem em Blade Runner 2049?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quisquam distinctio aut modi dolor, natus sequi magnam praesentium error fugiat voluptate corporis quos consectetur quaerat porro nam accusantium ea doloremque.</p>
+                    <img src="/img/imagem1.png" alt="">
+                </div>
+
+                <div class="novoComentario">
+                    <form id="formularioComentario" method="post" action="/postar-comentario">
+                        <div class="caixa-mensagem">
+                            <textarea id="novoComentario" name="novoComentario" placeholder="Escreva seu comentário..."></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="novoPostDiv"> 
+            <h1>CRIAR NOVO POST</h1>
+            <div class="inputDiv"> 
+
+                <div class="infoUsuarioDiv">
+                    <div class="avatarUsuarioDiv">
+                        <img class="avatarUsuario" src="/img/imagem1.png" alt="Avatar">
+                    </div>
+
+                    <div class="nomeTempoDiv">
+                        <p class="nomeUsuario"><strong>Usuário</strong></p>
+                    </div>
+                </div>
+
+                <!-- criacao de um novo post-->
+
+                <div class="conteudoDiv">
+
+                    <form id="formularioNovoPost" method="post" enctype="multipart/form-data" action="/criar-post">
+
+                        <div class="caixa-mensagem2">
+                            <input type="text" id="tituloPost" name="tituloPost" placeholder="Título do post">
+
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+
+                            <input type="file" id="arquivo" name="arquivo" accept="audio/*,video/*,image/*,.txt">                            
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <p>©2024 Todos os direitos reservados</p>
+    </footer> 
+
+    <script src="/js/comunidadeScript.js"></script>
+</body>
+</html>
